@@ -31,6 +31,8 @@ class LrScheduler():
 
 
 if __name__ == '__main__':
+    torch.multiprocessing.set_sharing_strategy('file_system')
+
     # Arguments
     parser = argparse.ArgumentParser(
         description='Train a 3D scene representation model.'
